@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@500&family=Tajawal:wght@700&display=swap');
+
+.cairo{
+    font-family: 'cairo', sans-serif;
+}
+
+/* here style inputs */
+
+input.w-100{
+    outline: none;
+    border: none;
+    border-bottom: 1px solid #c8c6cc;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button{
+	-webkit-appearance: none;
+	margin: 0;
+}
+
+input[type="checkbox"] {
+    accent-color: #282828;    
+}
+
+/* here radio input */
+input[type="radio"]:active {
+    background-color: #282828 !important;
+    border-color: #282828 !important;
+}
+
+input[type="radio"]:focus {
+    border-color: #282828;
+    outline: 0;
+    box-shadow: 0 0 0 0.25rem rgb(36 36 36 / 25%);
+}
+
+input[type="radio"]:checked {
+    background-color: #1c1c1c;
+    border-color: #2c2c2c;
+}
+
+/* end radio input */
+
+.col-lg-12 button{
+	border-radius: 0px 0px 12px 12px !important;
+}
+
+
+.flag-saudia{
+	width: 4%;
+}
+/* end style singup */
+/* here style login */
+
+.label-form{
+	color: #00000094;
+}
+.form-control{
+	border: none;
+	border-bottom: 1px solid #00000033;
+}
+
+.form-control:focus{
+	border: none !important;
+	box-shadow: none !important;
+	border-bottom: 1px solid #00000033 !important;
+}
+
+.form-control::placeholder{
+	color: #0000005e;
+}
+
+.title-page{
+	font-size: 2.7rem;
+}
+/* end styles */
+
+
+/* here mobile-menu */
+@media (max-width: 768px){
+    .menu-mobile{
+        line-height: 27px;
+        position: fixed;
+        bottom: 0px;
+        left: 0px;
+        right: 0px;
+        z-index: 40;
+        display: flex !important;
+        box-shadow: #0000002b 0px -1px 8px;
+    }
+    .mobile-icons{
+        width: 100%;
+    }
+    .mobile-icons span{
+        width: 100%;
+    }
+    .mobile-icons span a div{
+        font-size: 0.8rem !important;
+    }
+
+	.flag-saudia{
+		width: 10%;
+	}
+	/* here style login page */
+	.logo{
+		width: 30% !important;
+	}
+}

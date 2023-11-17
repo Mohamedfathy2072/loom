@@ -1,0 +1,24 @@
+{
+    "name": "yamama/looom",
+    "autoload": {
+        "psr-4": {
+            "Yamama\\Looom\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "mohamed"
+        }
+    ],
+    "require": {
+        "illuminate/database": "^10.31"
+    },
+    "scripts": {
+        "serve": [
+            "php -S localhost:8000"
+        ],
+        "migrate": [
+            "php ./src/migrate2.php"
+        ]
+    }
+}
