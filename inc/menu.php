@@ -228,7 +228,7 @@ require_once 'asset/session_hijkaing.php';
           >
               <div class="media align-items-center">
                      <span class="avatar avatar-sm rounded-circle">
-                        <img alt="Image placeholder" src="img/icons/user.jpg">
+<!--                        <img alt="Image placeholder" src="img/icons/user.jpg">-->
                      </span>
                   <div class="media-body ml-2 d-none d-lg-block">
                       <span class="mb-0 text-sm  font-weight-bold">mohamed fathy</span>

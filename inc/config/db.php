@@ -7,19 +7,19 @@ try{
     @$user = "root";
     @$pass = "";
     @$host = "localhost";
-    @$db_name = "looom";
+    @$db_name = "loom";
     @$arabic_option = array(PDO::MYSQL_ATTR_INIT_COMMAND => "SET NAMES UTF8");//For Arabic
     @$conn = new PDO("mysql:host=". $host .";dbname=". $db_name . ";charset=utf8;",$user,$pass,$arabic_option);
-    @$conn->setAttribute(PDO::ATTR_ERRMODE,PDO::ERRMODE_EXCEPTION); //حتى تظهر الخطأ باستثناء
+    @$conn->setAttribute(PDO::ATTR_ERRMODE,PDO::ERRMODE_EXCEPTION);
 
     $capsule = new Capsule;
 
-    $capsule->addConnection([
+    $capsule->addConnection(    [
         'driver' => 'mysql',
-        'host' => 'localhost',
-        'database' => 'looom',
-        'username' => 'root',
-        'password' => '',
+        'host' => $host,
+        'database' => $db_name,
+        'username' => $user,
+        'password' => $pass,
 
     ]);
     $capsule->setAsGlobal();

@@ -7,6 +7,34 @@
 
 
 <section class="py-5">
+
+
+    <div class="modal fade" id="AddAdress" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLongTitle"></h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body" style="text-align:justify ">
+                    <div class="row " >
+                        <div class="col col-12" >
+                            <label for="" class="form-label">الاسم</label>
+                            <input type="text" value="" placeholder="" class="form-control">
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">الغاء</button>
+                    <button type="button" class="btn btn-primary">حفظ</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
     <div class="container">
 
     <!-- here row title and button -->
@@ -19,7 +47,7 @@
             </div>
 
             <div class="col-lg-2">
-                <a href="#" class="cairo btn btn-dark fs-6">اضافة عنوان جديد</a>
+                <button type="button" class="cairo btn btn-dark fs-6" data-toggle="modal" data-target="#AddAdress">اضافة عنوان جديد</button>
             </div>
 
         </div>
@@ -137,6 +165,7 @@
 <!-- Start Script -->
 <script src="../assets/js/jquery-1.11.0.min.js"></script>
 <script src="../assets/js/jquery-migrate-1.2.1.min.js"></script>
+<script src="../login/js/bootstrap.min.js"></script>
 <script src="../assets/js/bootstrap.bundle.min.js"></script>
 <script src="../assets/js/templatemo.js"></script>
 <script src="../assets/js/fontawesome.js"></script>
