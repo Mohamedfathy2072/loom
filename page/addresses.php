@@ -37,7 +37,7 @@
 
     <div class="container">
 
-    <!-- here row title and button -->
+        <!-- here row title and button -->
         <div class="row mb-3">
 
             <h2 class="pt-3 mb-0 fw-bold text-end cairo"><?= $pageName; ?></h2>
@@ -51,7 +51,7 @@
             </div>
 
         </div>
-    <!-- end row -->
+        <!-- end row -->
 
         <!-- here row info address -->
         <div class="row">

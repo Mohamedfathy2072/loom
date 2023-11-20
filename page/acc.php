@@ -146,6 +146,50 @@
                 </div>
 
             </form>
+            <form class="col-md-12 m-auto order-2 mt-5 mb-5 bg-white shadow p-3 mb-5 bg-white rounded" method="POST" role="form">
+
+                <h4 class="cairo mt-3 mb-3">العنوان</h4>
+
+                <div class="row">
+
+                    <div class="form-group col-lg-4 col-md-4 col-sm-4 mb-3">
+                        <label for="inputEmail" class="cairo">المدينة</label>
+                        <input type="text" autocomplete="off"  class="form-control mt-1" id="inputEmail" name="country" >
+                    </div>
+
+                    <div class="form-group col-lg-4 col-md-4 col-sm-4 mb-3">
+                        <label for="inputpassword" class="cairo">الحالة</label>
+                        <input type="password" class="form-control mt-1" id="status" name="pass_1" required>
+                    </div>
+
+                    <div class="form-group col-lg-4 col-md-4 col-sm-4 mb-3">
+                        <label for="inputpassword" class="cairo">الدولة</label>
+                        <input type="password" class="form-control mt-1" id="password" name="pass_2" required>
+                    </div>
+
+                </div>
+                <div class="row">
+
+                    <div class="form-group col-lg-4 col-md-4 col-sm-4 mb-3">
+                        <label for="inputEmail" class="cairo">الرقم البريدي</label>
+                        <input type="text" autocomplete="off"  class="form-control mt-1" id="inputEmail" name="email" value="<?php echo $_SESSION['email_member']; ?>" required>
+                    </div>
+
+                    <div class="form-group col-lg-4 col-md-4 col-sm-4 mb-3">
+                        <label for="inputpassword" class="cairo">الرمز الدولي</label>
+                        <input type="password" class="form-control mt-1" id="password" name="pass_1" required>
+                    </div>
+
+
+
+                </div>
+                <div class="row">
+                    <div class="col text-end mt-2 mb-3">
+                        <button type="submit" class="btn btn-dark px-3 cairo" name="change">اضافة</button>
+                    </div>
+                </div>
+
+            </form>
 
 
         </div>

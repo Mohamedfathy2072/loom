@@ -2,15 +2,13 @@
 
 namespace Yamama\Looom\Controllers;
 
-use Yamama\Looom\Models\Cart;
 use Yamama\Looom\Models\shipping;
-use Yamama\Looom\Models\User;
 
 class ShippingController
 {
 
     public static function all(){
-//        (`iD`, ``, ``) VALUES (NULL, '6', '5');
+
         shipping ::create([
             "country_name" => 'qatar',
             "country_code" => 'qatsar',
@@ -18,10 +16,8 @@ class ShippingController
             "max_weight" => '15',
             "price" => '225',
             "additional_price" => '5',
-
-
-
         ]);
+
         return shipping::all();
     }
 }
